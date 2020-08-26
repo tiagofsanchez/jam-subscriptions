@@ -1,5 +1,5 @@
 [build]
   command = "npm i --prefix=functions"
-  publish = "src"
+  publish = "public"
   functions = "functions"
 
