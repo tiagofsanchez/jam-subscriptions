@@ -10,6 +10,7 @@ const Index = () => {
   const identity = useIdentityContext();
   const [dialog, setDialog] = useState(false);
 
+console.log(identity);
   return (
     <>
       {identity && identity.isLoggedIn && (
@@ -28,7 +29,6 @@ const Index = () => {
         onSignup={(user) => console.log("welcome ", user?.user_metadata)}
         // onLogout={() => console.log("bye ", name)}
       />
-      )
     </>
   );
 };
